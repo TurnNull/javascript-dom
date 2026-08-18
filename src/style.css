@@ -13,3 +13,9 @@ body{
     font-family: 'JetBrains Mono';
     color: #333;
 }
+
+/* Menambahkan class berdasarkan elemen yang ditambahkan di setAttribut */
+.salmonColor {
+    background-color: salmon;
+    color: #fff;
+}
