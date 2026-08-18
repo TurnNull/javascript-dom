@@ -55,3 +55,27 @@
 // judul.classList.contains("dua");
 // // Mengganti isi nilai class dengan yang baru
 // judul.classList.replace("dua", "empat");
+
+// Membuat element p baru
+const pBaru = document.createElement('p');
+// Memuat isi text 
+const txtP = document.createTextNode("Paragraf 4 baru!");
+// Isi pada teks baru digabungkan dengan element yang sudah dibuat
+pBaru.appendChild(txtP);
+// Mengambil element dari parent
+const sectionA = document.getElementById('a');
+// Memuat isi tag pBaru kedalam element sectionA dengan class p4
+sectionA.appendChild(pBaru).classList.add('p4');
+
+// Membuat element li baru
+const liBaru = document.createElement('li');
+// Membuat isi text
+const txtLi = document.createTextNode("Item Baru!!");
+// Isi pada text digabungkan kedalam element li
+liBaru.appendChild(txtLi)
+// Mengambil element dari parent yaitu ul
+const ul = document.querySelector('section#b ul')
+// Mengambil referensi child yang akan dimuat oleh element baru
+const li = document.querySelector('section#b ul li:nth-child(2)')
+// Menggabungkan li yang baru di dalam ul dengan kondisi sebelum li ke dua
+ul.insertBefore(liBaru, li)
